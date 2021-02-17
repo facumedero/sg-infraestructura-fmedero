@@ -5,10 +5,10 @@ RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
 RUN mkdir /app
 WORKDIR /app
 
-#ADD Gemfile /sg-blog-master/Gemfile
-#ADD Gemfile.lock /sg-blog-master/Gemfile.lock
+ADD Gemfile /Gemfile
+ADD Gemfile.lock /Gemfile.lock
 #RUN bundle install
-#ADD . /sg-blog-master 
-#RUN echo 'gem: --no-document' >> ~/.gemrc
+ADD . /sg-blog-master 
+
 
 
